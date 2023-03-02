@@ -1,3 +1,7 @@
 export default function handler(req, res) {
-    res.status(200).json({ text: 'Hello there' });
+    res.status(200).json({ 
+        text: 'Hello there',
+        env: process.env,
+        time: new Date()
+     });
 }
